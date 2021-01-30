@@ -1,0 +1,26 @@
+name: sync k8s image
+description: An Action for Sync Kubernetes Image from gcr.io to docker hub
+author: sxyx2008@163.com
+branding:
+  color: blue
+  icon: code
+inputs:
+  username:
+    description: 'Username used to login docker registry'
+    required: true
+  password:
+    description: 'Password used to login docker registry'
+    required: true
+  registry:
+    description: 'Docker registry server address'
+    required: false
+    default: ''
+  repository:
+    description: 'docker image repository name'
+    required: true
+  kubernetes_version:
+    description: 'set kubernetes version'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
