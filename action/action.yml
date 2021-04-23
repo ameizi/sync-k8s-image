@@ -1,4 +1,4 @@
-name: sync k8s image
+name: sync k8s images
 description: An Action for Sync Kubernetes Image from gcr.io to docker hub
 author: sxyx2008@163.com
 branding:

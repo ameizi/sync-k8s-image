@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: sync
-      uses: ameizi/sync-k8s-image/action@master
+      uses: ameizi/sync-k8s-images/action@master
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
